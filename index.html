@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="nav-bar-section">
+      <div id="nav-bar">
+        <ul id="nav-bar-menu">
+          <li id="nav-bar-list"><a href="#">Home</a></li>
+          <li id="nav-bar-list"><a href="#about-me">About</a></li>
+          <li id="nav-bar-list"><a href="#projects">Projects</a></li>
+          <li id="nav-bar-list"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="hero-section">
+      <div class="hero-container">
+        <h1 class="hero-text">
+          My name is Dusan, <br />
+          I am a Full-stack <br />
+          Developer
+        </h1>
+        <a href="javascript:void(0);" onclick="window.location='#projects'"
+          >PROJECTS</a
+        >
+      </div>
+      <div class="container2" onclick="window.location='#about-me'">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </div>
+    </section>
+    <section class="about-me-section" id="about-me">
+      <div class="about-me-text-container">
+        <h2>ABOUT ME</h2>
+        <p id="about-me-text">
+          Hello, I am a full-stack developer from Bosnia and Hercegovina. I am
+          21 years old, currently living in Banja Luka. Bellow are some skills
+          that I have learned in my dev journey. Dont forget to check my
+          projects!
+        </p>
+        <div class="line"></div>
+        <p id="about-me-skills">
+          HTML,SCSS,CSS,Javascript,MySQL,MongoDB,<br />
+          Java,Spring,Docker,GIT...
+        </p>
+      </div>
+      <div class="about-me-image">
+        <img src="images/Asset 1.svg" alt="Robot" />
+      </div>
+    </section>
+    <section class="portfolio-section" id="projects">
+      <h2>MY PROJECTS</h2>
+      <div class="wrapper">
+        <div class="item-bg"></div>
+
+        <div class="news-slider">
+          <div class="news-slider__wrp swiper-wrapper">
+            <div class="news-slider__item swiper-slide">
+              <a href="https://btc-website.netlify.app/" class="news__item">
+                <div class="news__title">BTC Website</div>
+
+                <p class="news__txt">An bitcoin based designed website.</p>
+
+                <div class="news__img">
+                  <img
+                    class="btc-website"
+                    src="images/btc-website.png"
+                    alt="news"
+                  />
+                  <img class="btc-code" src="images/btc-code.png" alt="news" />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a href="https://house-website.netlify.app/" class="news__item">
+                <div class="news__title">House Sales Website</div>
+
+                <p class="news__txt">
+                  An website for selling,renting... property.
+                </p>
+
+                <div class="news__img">
+                  <img
+                    class="house-website"
+                    src="images/house-website.png"
+                    alt="news"
+                  />
+                  <img
+                    class="house-code"
+                    src="images/house-code.png"
+                    alt="news"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a
+                href="https://dusancivcic-color-game.netlify.app/"
+                class="news__item"
+              >
+                <div class="news__title">Color Game</div>
+
+                <p class="news__txt">This is a cool rgb color game.</p>
+
+                <div class="news__img">
+                  <img
+                    class="color-website"
+                    src="images/colorgame.png"
+                    alt="news"
+                  />
+                  <img
+                    class="color-code"
+                    src="images/color-code.png"
+                    alt="news"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a
+                href="https://dusancivcic-calculator-app.netlify.app/"
+                class="news__item"
+              >
+                <div class="news__title">Calculator App</div>
+
+                <p class="news__txt">Simple calculator application.</p>
+
+                <div class="news__img">
+                  <img
+                    class="calculator-website"
+                    src="images/calculator.png"
+                    alt="news"
+                  />
+                  <img
+                    class="calculator-code"
+                    src="images/calculator-code.png"
+                    alt="news"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a
+                href="https://dusancivcic-timer-app.netlify.app/"
+                class="news__item"
+              >
+                <div class="news__title">Timer App</div>
+
+                <p class="news__txt">An cool designed timer application.</p>
+
+                <div class="news__img">
+                  <img
+                    class="timer-website"
+                    src="images/timer.png"
+                    alt="news"
+                  />
+                  <img
+                    class="timer-code"
+                    src="images/timer-code.png"
+                    alt="news"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a
+                href="https://dusancivcic-quiz.netlify.app/"
+                class="news__item"
+              >
+                <div class="news__title">Quiz Game</div>
+
+                <p class="news__txt">
+                  This is a quiz game with simple questions.
+                </p>
+
+                <div class="news__img">
+                  <img class="quiz-website" src="images/quiz.png" alt="news" />
+                  <img
+                    class="quiz-code"
+                    src="images/quiz-code.png"
+                    alt="news"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div class="news-slider__item swiper-slide">
+              <a
+                href="https://diamonds-website.netlify.app/"
+                class="news__item"
+              >
+                <div class="news__title">Diamonds Website</div>
+
+                <p class="news__txt">
+                  This is a cool looking diamonds website.
+                </p>
+
+                <div class="news__img">
+                  <img
+                    src="images/diamonds-website.png"
+                    alt=""
+                    class="diamonds-website"
+                  />
+                  <img
+                    src="images/diamonds-code.png"
+                    alt=""
+                    class="diamonds-code"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="news-slider__ctr">
+            <div class="news-slider__arrows">
+              <button class="news-slider__arrow news-slider-prev">
+                <span class="icon-font">
+                  <svg class="icon icon-arrow-left">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                </span>
+              </button>
+              <button class="news-slider__arrow news-slider-next">
+                <span class="icon-font">
+                  <svg class="icon icon-arrow-right">
+                    <use xlink:href="#icon-arrow-right"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="news-slider__pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <svg hidden="hidden">
+        <defs>
+          <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+            <title>arrow-left</title>
+            <path
+              d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z"
+            ></path>
+          </symbol>
+          <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+            <title>arrow-right</title>
+            <path
+              d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"
+            ></path>
+          </symbol>
+        </defs>
+      </svg>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
