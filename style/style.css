@@ -2,7 +2,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -292,9 +294,14 @@ a {
   letter-spacing: 2px;
   text-shadow: 0 0 8px #262122;
 }
-
+.portfolio-section {
+  max-height: 100vh;
+  overflow: hidden;
+}
 /*begining of slider*/
-
+#menuToggle {
+  display: none;
+}
 .icon {
   display: inline-block;
   width: 1em;
@@ -652,4 +659,118 @@ a {
   bottom: 0;
   font-size: 12px;
   margin-bottom: 5px;
+}
+#menuToggle {
+  display: hide;
+}
+@media screen and (max-width: 768px) {
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a {
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    color: #121730;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin: 0;
+  }
+
+  #menuToggle a:hover {
+    color: #f27f1b;
+    border: none;
+    background: none;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  .nav-bar-section {
+    display: none;
+  }
+
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+
+    position: relative;
+    background: #f8f8f8;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background-color: #121730;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menu {
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #f8f8f8;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0.9;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    width: 100px;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+  .hero-container h1 {
+    font-size: 40px;
+  }
+  .about-me-section {
+    flex-direction: column;
+  }
 }
