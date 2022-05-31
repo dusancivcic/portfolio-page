@@ -631,6 +631,7 @@ a {
   border-radius: 10px;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .footer-section {
   border-top: 1px solid #f27f1b;
